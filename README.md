@@ -5,6 +5,6 @@ Utilizando *HTML, CSS e PHP*  foi criado um código que retrata uma *calculadora
 A sequência de Fibonacci é *uma série numérica onde cada número após os dois primeiros é a soma dos dois números anteriores.* Começa com 0 e 1, e então continua com 1, 2, 3, 5, 8 e assim por diante. Ela possui propriedades matemáticas interessantes e é encontrada em vários *fenômenos naturais, além de ter aplicações em áreas como finanças e informática.*
 
 ## Ator
-- Larissa Manrique 
-[GitHub](https://github.com/larissassk)  
+- Larissa Manrique   
+[GitHub](https://github.com/larissassk)    
 [Linkedin](https://www.linkedin.com/in/larissa-manrique/)
