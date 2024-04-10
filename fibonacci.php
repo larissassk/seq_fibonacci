@@ -9,14 +9,14 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #d8c8ff; /* Lilás claro para o body */
+            background-color: #d8c8ff; 
         }
 
         .container {
             max-width: 500px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #f0f0f0; /* Cinza para o form */
+            background-color: #f0f0f0; 
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -30,11 +30,11 @@
             max-width: 500px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #f0f0f0; /* Cinza para o form */
+            background-color: #f0f0f0; 
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: justify;
-            color: #555; /* Cinza escuro */
+            color: #555; 
         }
 
         form {
@@ -50,13 +50,13 @@
             padding: 10px;
             width: 200px;
             border-radius: 5px;
-            border: 1px solid #ccc; /* Cinza */
+            border: 1px solid #ccc; 
             margin-right: 10px;
         }
 
         button {
             padding: 10px 20px;
-            background-color: #6a5acd; /* Roxo médio */
+            background-color: #6a5acd; 
             color: white;
             border: none;
             border-radius: 5px;
@@ -64,7 +64,7 @@
         }
 
         button:hover {
-            background-color: #483d8b; /* Roxo escuro */
+            background-color: #483d8b; 
         }
 
         .resultado {
