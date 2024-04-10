@@ -89,7 +89,7 @@
     <div class="calcula">
         <form method="post">
             <label for="numero">Insira um número: </label>
-            <input type="number" name="numero" id="numero" required>
+            <input type="number" name="numero" id="numero" required><br><br>
             <button type="submit">Calcular</button>
         </form>
 
