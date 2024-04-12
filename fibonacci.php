@@ -95,30 +95,39 @@
 
         <!-- PHP que calcula e exibe a mensagem(resultado) -->
         <div class="resultado">
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $numero = isset($_POST['numero']) ? $_POST['numero'] : '';
-                // Verifica se $n  foi enviado e guarda o valor em $numero, caso contrário, uma string vazia.
-                if (!is_numeric($numero) || $numero < 0 || strpos($numero, '.') !== false) {
-                    echo 'Por favor, insira um número positivo.'; //se o número for 0 ou negativo manda uma mensagem 
-                } else {
-                    $Sfibonacci = [];
-                    for ($i = 0; $i < $numero; $i++) {//itera de 0 até o número inserido em loop.
-                        $Sfibonacci[] = fibonacci($i);
-                    }
-                    //Imprime o resultado da sequencia
-                    echo 'Sequência de Fibonacci até ' . $numero . ':<br> ' . implode(', ', $Sfibonacci);
-                }
-            }
-            //função para calcular os números da sequência de Fibonacci.
-            function fibonacci($n) {
-                if ($n <= 1) {//Verifica se o n é menor ou = a 1 se sim  retorna o numero inserido.
-                    return $n; 
-                } else {
-                    return fibonacci($n - 1) + fibonacci($n - 2); //se nao retorna  o resultado
-                }
-            }
-            ?>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $numero = isset($_POST['numero']) ? $_POST['numero'] : '';
+        // Verifica se $numero foi enviado e guarda o valor em $numero, caso contrário, uma string vazia.
+        if (!is_numeric($numero) || $numero < 0 || strpos($numero, '.') !== false) {
+        echo 'Por favor, insira um número positivo.'; // se o número for 0 ou negativo, exibe uma mensagem de erro 
+        } else {
+        $Sfibonacci = [];
+        for ($i = 0; $i < $numero; $i++) { // itera de 0 até o número inserido em um loop
+            $fib = fibonacci($i);
+            $Sfibonacci[] = $fib;
+        }
+        // Calcula e exibe o resultado da soma dos dois últimos números da sequência de Fibonacci
+        $ultimo = end($Sfibonacci);
+        $penultimo = prev($Sfibonacci);
+        $soma = $ultimo + $penultimo;
+        
+        // Imprime o resultado da sequência de Fibonacci
+        echo '<strong>Sequência de Fibonacci até  </strong>' . $numero . ':<br> ' . implode(', ', $Sfibonacci) . '<br>';
+        echo '<strong>Resultado: </strong>' .$soma;
+    }
+}
+
+        // Função para calcular os números da sequência de Fibonacci
+        function fibonacci($n) {
+        if ($n <= 1) {
+        return $n; // Retorna o próprio número se for 0 ou 1
+        } else {
+        return fibonacci($n - 1) + fibonacci($n - 2); // Retorna a soma dos dois números anteriores se for maior que 1
+        }
+        }
+        ?>
+
         </div>
     </div>
 </div>
