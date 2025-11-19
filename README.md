@@ -26,7 +26,7 @@ Este projeto foca em demonstrar:
 
 * **Matemática:** A sequência é encontrada em diversos padrões na natureza, como a disposição das pétalas de flores e as espirais de conchas. 
 
-[Image of Fibonacci spiral in nature]
+[Image of Fibonacci spiral in nature](https://live.staticflickr.com/7060/6908279323_0c593009fa_b.jpg)
 
 * **Aplicação:** Usada em algoritmos de busca e análise de dados na informática.
 
