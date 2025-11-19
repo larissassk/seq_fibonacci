@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d8c8ff; /* Roxo claro */
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0; /* Cinza claro */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0f0f0; 
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    color: #555; 
+}
+
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a5acd; /* Roxo principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #483d8b; /* Roxo escuro */
+}
+
+.resultado {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
